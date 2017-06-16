@@ -1,0 +1,110 @@
+/* ////////// Header ////////// */
+#wrap {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+#header {
+  width: 100%; height: 50px;
+  position: relative;
+  background-color: #f2f2f2;
+}
+#header h1 {
+  width: 30px; height: 30px;
+  position: absolute;
+  left: 10px; top: 9px;
+}
+#header h1 a {
+  display: block;
+  width: 30px; height: 30px;
+}
+#header h1 a img {
+  width: 100%; height: 100%;
+}
+#header h2 {
+  width: 100%; height: 50px;
+  line-height: 50px;
+  text-indent: 50px;
+}
+/* ////////// // ////////// */
+
+/* ////////// content ////////// */
+#content {
+  width: 100%;
+}
+#sliderArea {
+  position: relative;
+  width: 100%;
+}
+#mold {
+
+}
+#mold li {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  float: left;
+}
+#mold #inner0 {
+  background-image: url("../img/s0.jpg");
+}
+#mold #inner1 {
+  background-image: url("../img/s1.jpg");
+}
+#mold #inner2 {
+  background-image: url("../img/s2.jpg");
+}
+#mold #inner3 {
+  background-image: url("../img/s3.jpg");
+}
+#mold #inner4 {
+  background-image: url("../img/s4.jpg");
+}
+
+#directionArea {
+  width: 100%; height: 100%;
+  position: absolute;
+  left: 0; top: 0;
+}
+#directionArea a {
+  display: block;
+  width: 20%; height: 100%;
+  position: absolute;
+  top: 0;
+}
+#prevBtn {
+  left: 0;
+  cursor: url("../img/arrow-left.cur")0 30, auto;
+}
+#nextBtn {
+  right: 0;
+  cursor: url("../img/arrow-right.cur")30 30, auto;
+}
+#studArea {
+  background-color: Khaki;
+  width: 100%; height: 50px;
+  position: absolute;
+  left: 0; bottom: 0;
+}
+
+/* ////////// // ////////// */
+
+/* ////////// footer ////////// */
+#footer {
+  width: 100%; height: 100px;
+}
+#footer a {
+  display: inline-block;
+  width: 30px; height: 30px;
+  margin-left: 150px;
+}
+#footer a img {
+  display: inline;
+  width: 100%; height: 100%;
+  vertical-align: middle;
+}
+#address {
+  text-indent: 20px;
+  margin-left: 150px;
+}
+/* ////////// // ////////// */

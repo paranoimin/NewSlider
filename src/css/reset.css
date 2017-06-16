@@ -1,0 +1,28 @@
+*, body {
+  margin: 0;
+  padding: 0;
+}
+div, header, footer, address {
+  display: block;
+  margin: 0;
+  padding:0;
+}
+li {
+  list-style: none;
+}
+a:link, a:visited {
+  text-decoration: none;
+  color: #000;
+}
+a:focus, a:hover {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  display: block;
+  border: none;
+}
+
+body {
+  overflow-y: scroll;
+}
