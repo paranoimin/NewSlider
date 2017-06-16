@@ -1,4 +1,4 @@
-var winWidth, studs;
+var winWidth, studs, autoSel;
 var pos = 0;
 var items = $("#mold li").length;
 
@@ -13,6 +13,7 @@ $(function() {
     studs +=  "</li>";
   }
   studs += "</ul>";
+  autoSel = setInterval(startAutoSel, 5000);
   $("#studArea").html(
     studs
   );
@@ -26,6 +27,8 @@ $(function() {
   });
 
   $("#nextBtn").on("click", function() {
+    clearInterval(autoSel);
+    autoSel = setInterval(startAutoSel, 5000);
     winWidth = $(window).width();
     $("#studs li a").css({"background":"none"});
     if(pos === items-1) {
@@ -40,6 +43,8 @@ $(function() {
   });
 
   $("#prevBtn").on("click", function() {
+    clearInterval(autoSel);
+    autoSel = setInterval(startAutoSel, 5000);
     winWidth = $(window).width();
     $("#studs li a").css({"background":"none"});
     if(pos === 0) {
@@ -54,6 +59,8 @@ $(function() {
   });
 
   $("#studs li a").click(function() {
+    clearInterval(autoSel);
+    autoSel = setInterval(startAutoSel, 5000);
     winWidth = $(window).width();
     $("#studs li a").css({"background":"none"});
     $(this).css({"backgroundColor":"tomato"});
@@ -73,4 +80,7 @@ function nextMove(widSize, pos) {
 }
 function prevMove(widSize, pos) {
   $("#mold:not(:animated)").stop().animate({"marginLeft":"+="+widSize+"px"}, 300, "swing");
+}
+function startAutoSel() {
+  $("#nextBtn").click();
 }
