@@ -57,15 +57,8 @@ $(function() {
     winWidth = $(window).width();
     $("#studs li a").css({"background":"none"});
     $(this).css({"backgroundColor":"tomato"});
-    if($(this).attr("class") > pos) {
-      pos = Number($(this).attr("class"));
-      $("#mold:not(:animated)").stop().animate({"marginLeft":"-"+winWidth*pos+"px"}, 300, "swing");
-    } else if($(this).attr("class") < pos) {
-      pos = Number($(this).arrt("class"));
-      $("#mold:not(:animated)").stop().animate({"marginLeft":winWidth*pos+"px"}, 300, "swing");
-    } else {
-
-    }
+    pos = Number($(this).attr("class"));
+    $("#mold:not(:animated)").stop().animate({"marginLeft":"-"+winWidth*pos+"px"}, 300, "swing");
   });
 
 });
